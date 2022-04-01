@@ -1,0 +1,591 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    color: white;
+}
+/*-------------------------------Font-----------------------------*/
+@font-face {
+    font-family: 'marvel';
+    src: url('../font/far-from_homecoming_updated-webfont.woff2') format('woff2'),
+         url('../font/far-from_homecoming_updated-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    font-family:'Montserrat', sans-serif;
+}
+
+/*-------------------------------Police titre et paragraphe-----------------------------*/
+h1{
+    font-family:'marvel';
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/*-------------------------------background-----------------------------*/
+
+.red-background{ /*Fond de couleur rouge pour toutes les pages*/
+    background-color: #b11313;
+    color: white;
+}
+
+.blue-background{/*Fond de couleur bleu pour toutes les pages*/
+    background-color: #114C92;
+    color: white;
+}
+
+.yellow-background{/*Fond de couleur jaune pour toutes les pages*/
+    background-color: #f1c530;
+}
+
+.background-spidy{ /*Fond image acceuil (Deviens Spiderman)*/
+    background-image: url("../images/img5.png");
+    background-repeat: no-repeat;
+}
+
+.background-spidy2{ /*Fond image Acceuil (Newsletter)*/
+    background-image: url("../images/img6.png");
+    background-repeat: no-repeat;
+    background-color: #b11313;
+    background-position: bottom right;
+    background-size:50%;
+}
+
+/*-----------Fond image A Propos 1ère partie-----------------*/
+.background-spidy-flip{ 
+    background-image: url("../images/img5.png");
+    background-repeat: no-repeat;
+    -webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+
+.remettre-correcte{
+    -webkit-transform:scaleX(-1);
+    -moz-transform:scaleX(-1);
+    -ms-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+}
+/*--------------Fond image A Propos 1ère partie-------------*/
+
+.background-spidy-hero{ /*Fond image Heros (Deviens Spiderman*/
+    background-image: url("../images/img20.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/*-------------------------------header-----------------------------*/
+
+.logo{
+    padding: 12px;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.sayna{
+    height: 50px;
+}
+
+.marvel{
+    height: 50px;
+    width: 120px;
+}
+
+.x{
+    height: 27px;
+}
+
+.nav-link{
+    color:white;
+    font-family: Montserrat;
+    text-decoration: none;
+    padding: 20px 30px 0px 30px;
+    font-size: 14px;
+}
+
+.nav-link:hover{
+    font-weight: bold;
+    color: #f1c530;
+}
+
+.active{
+    font-weight: bold;
+}
+
+/*-------------------------------Responsive 800px-----------------------------*/
+@media (min-width: 800px) {
+    .menu-petit-ecran{
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .menu-grand-ecran{
+        display: none;
+    }
+}
+
+/*-------------------------------Contenu-----------------------------*/
+.contenant-image {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+  
+.texte-sur-image {
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+    transform: translate(-20%, 10%);
+}
+
+.texte-sur-image-spiderman {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+
+.banner-title{
+    font-size: 64px;
+    text-align: left;
+}
+.banner-desc{
+    font-size: 20px;
+    text-align: left;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 20px;
+}
+.btn-white{
+    background-color: white;
+    color:#b11313;
+    font-weight: bold;
+}
+.btn-white:hover{
+    border: 1px solid white;
+    background-color:rgba(255, 0, 0, 0);
+    color:white;
+}
+.btn-transp{
+    border: 1px solid white;
+    background-color:rgba(255, 0, 0, 0);
+    color:white;
+}
+.btn-transp:hover{
+    font-weight: bold;
+    color:white;
+    border: 1px solid white;
+}
+.space-bottom{
+    margin-bottom: 50px;
+}
+.large-space-bottom{
+    margin-bottom: 100px;
+}
+.xlarge-space-bottom{
+    margin-bottom: 150px;
+}
+.space-top{
+    margin-top: 50px;
+}
+.large-space-top{
+    margin-top: 100px;
+}
+.space{
+    margin:40px;
+}
+.text-spiderman{
+    text-align: justify;
+}
+.text-spiderman-hero{
+    text-align: left;
+}
+.contenue-center{
+    text-align: center;
+}
+.contenue-spacing-right{
+    margin-right:70px;
+}
+.formulaire{
+    margin: 25px;
+}
+.round-white{
+    border-radius: 50px;
+    border: 1px solid black;
+}
+.round-transp{
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color:rgba(255, 0, 0, 0);
+}
+.round-transp::placeholder{
+    color:white;
+}
+.contact-apropos{
+    border: 1px solid white;
+    background-color:rgba(255, 0, 0, 0);
+    color:white;
+    width: 400px;
+    border-radius: 15px;
+    color: white;
+}
+.contact-apropos::placeholder{
+    color: white;
+}
+.messagetext{
+    height: 160px;
+}
+.contenant-adversaire{
+    width: 350px;
+    margin: 20px;
+    margin-top:50px ;
+}
+.adversaire-title{
+    text-align: center;
+}
+.adversaire-desc{
+    font-size: 15px;
+}
+.fiche-adversaires{
+    border: 10px solid rgba(0, 0, 0, 0.911);
+    border-radius: 0px 0px 25px 25px;
+    margin-top:-10px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    color:black;
+    padding:15px;
+    padding-bottom: 0px;
+    line-height: 30px;
+    -webkit-box-shadow: 0px 6px 17px 2px rgba(0,0,0,0.75); 
+    box-shadow: 0px 6px 17px 2px rgba(0,0,0,0.75);
+    min-height: 450px;
+}
+/*------------Heros-----------*/
+.text-hero-justify{
+    text-align: justify;
+}
+
+.text-hero-left{
+    text-align:left;
+}
+
+.hero-space-inner-container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.hero-space-inner-col{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image-superposer{
+    width: 100%;
+}
+
+.avenger-space{
+    padding-left: 150px;
+}
+
+@media (min-width: 850px) {
+    .p-image-superposer1{
+        padding-left:0px ;
+    }
+
+    .p-image-superposer2{
+        text-align: right;
+        margin-top:-20%;
+    }
+
+    .image-superposer{
+        width: 65%;
+    }
+}
+
+.p-image-avengers{
+    text-align:right ;
+    padding: 0px;
+    margin: 0px;
+}
+
+.image-avenger{
+    width: 100%;
+}
+
+.p-hero-avenger{
+    font-size:18px;
+    padding-right: -10px;
+}
+.p-image-membre-avenger{
+    margin: 10px 10px 10px 0px;
+}
+
+.p-avenger-space-right{
+    margin-right: 30px;
+}
+
+/*-------------------------------Responsive 1840px-----------------------------*/
+@media (max-width: 1840px) {
+    .p-avenger-space-right{
+        margin-right: 10px;
+    }
+}
+
+/*-------------------------------Responsive 1790px-----------------------------*/
+@media (max-width: 1790px) {
+    .p-hero-avenger{
+        font-size: 1em;
+ 
+    }
+}
+
+/*-------------------------------Responsive 1550px-----------------------------*/
+@media (max-width: 1550px) {
+    .p-hero-avenger{
+        font-size: 0.9em;
+
+    }
+}
+
+/*-------------------------------Responsive 1250px-----------------------------*/
+@media (max-width: 1250px) {
+    .p-hero-avenger{
+        font-size: 0.7em;
+
+        line-height: 1.2em;
+    }
+    .p-avenger-space-right{
+        margin-right: 0px;
+    }
+}
+
+/*-------------------------------Responsive 980px-----------------------------*/
+@media (max-width: 980px) {
+    .avenger-disparition{
+        display: none;
+    }
+}
+
+.hero-univers-fond{
+        background-image: url("../images/img33.png");
+        background-repeat: no-repeat;
+        background-size:cover ;
+}
+
+.blue-background-transp{/*Fond de couleur bleu pour toutes les pages*/
+    background-color: #114C9290;
+
+}
+
+.hero-univers-space{
+    padding: 40px;
+}
+.hero-text-right{
+    text-align: right;
+}
+/*-------------------------------footer-----------------------------*/
+.footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding-top: 0px;
+    line-height: 100px;
+}
+.form-select{
+    border-radius: 50px;
+    padding: 3px 90px 3px 20px;
+    margin-top: 58px;
+    border: 0px;
+    font-size: 11px;
+}
+
+.footer-item{
+    font-size: 11px;
+    
+}
+
+.logo2{
+    line-height: 0px;
+    text-align: center;
+    padding: 3px;
+}
+
+.sayna2{
+    height: 35px;
+}
+
+.x2{
+    height: 15px;
+}
+
+.marvel2{
+    height: 35px;
+    width: 100px;
+}
+
+.reseaux-sociaux{
+    padding: 6px;
+    border-radius: 50px;
+    margin: 4px;
+    height: 32px;
+}
+
+.copyright{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 13px;
+}
+
+/*-------------------------------Responsive 1200px-----------------------------*/
+@media (min-width: 1200px) {
+    .filles-petit-ecran{
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .filles-grand-ecran{
+        display: none;
+    }
+}
+/*-------------------------------Responsive 1400px-----------------------------*/
+@media (max-width: 1400px) {
+    .contenant-adversaire{
+        width: 300px;
+        margin: 10px;
+        margin-top:50px ;
+    }
+}
+/*-------------------------------Responsive 1050px-----------------------------*/
+@media (max-width: 1050px) {
+    .logo{
+        padding: 5px;
+        text-align: center;
+        padding-bottom: 0px;
+        margin-top: 13px;
+    }
+    .sayna{
+        height: 35px;
+    }
+    
+    .marvel{
+        height: 35px;
+        width: 80px;
+    }
+    
+    .x{
+        height: 15px;
+    }
+
+    .footer-item {
+      padding: 15px;
+    }
+
+    .form-select{
+        margin-top: 55px;
+    }
+    .contenue-spacing-right{
+        margin-right:20px;
+    }
+    .contenant-adversaire{
+        width: 300px;
+        margin: 10px;
+        margin-top:50px ;
+    }
+  }
+
+/*-------------------------------Responsive 850px-----------------------------*/
+@media (min-width: 850px) {
+    .petite-taille{
+        display: none;
+    }
+}
+@media (max-width: 850px) {
+    .grande-taille{
+        display:none;
+    }
+    .petite-taille-menu{
+        list-style: none;
+        text-align: left;
+        margin:20px;
+        padding: 0px;
+    }
+    .footer{
+        line-height: 30px;
+        color: white;
+    }
+    .petite-taille-item{
+        color: white;
+        font-size: 13px;
+    }
+    .petite-taille-item:hover{
+        color: white;
+        font-weight: bold;
+    }
+    .form-select{
+        width: 150px;
+        padding: 10px 15px;
+    }
+    .btn{
+        padding: 8px 13px;
+        border-radius: 50px;
+        margin: 5px;
+        font-size: 11px;
+    }
+    .space-bottom{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .banner-title{
+        font-size:32px
+    }
+    .texte-sur-image-logo{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate(-20%, -50%);
+
+    }
+    .banner-desc{
+        font-size: 15px;
+        text-align: left;
+    }
+    .text-spiderman{
+        text-align: center;
+    }
+    .text-spiderman-hero{
+        text-align: center;
+    }
+}
